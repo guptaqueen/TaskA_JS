@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center;  */
+  /* height: 100vh;
+  overflow: hidden; */
+  background: linear-gradient(to right, #f1b2ab, #8e44ad);
+  /* background: linear-gradient(to right, #c0392b,#8e44ad,);  */
+}
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 7px;
+  padding: auto;
+  border: 2px solid white;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  max-width: 100%;
+  background: linear-gradient(to right, #c0392b, #8e44ad);
+  opacity: 0.5;
+  position: relative;
+  transition: left 0.3s ease;
+}
+
+.big-box {
+  margin: 7px;
+  padding: auto;
+  border: 2px solid white;
+  width: 285px;
+  height: 150px;
+  background-color: #ee9ca7;
+  box-shadow: 10px 10px 5px #ed7d71 inset;
+  border-radius: 15px;
+  opacity: 0.5;
+}
+
+.circle_one {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin-bottom: 7px;
+  padding-left: 7px;
+}
+
+.circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 78px;
+  height: 82px;
+  opacity: 0.5;
+  grid-row: 1 / 2;
+  background-color: #ee9ca7;
+  box-shadow: 10px 10px 5px #ed7d71 inset;
+}
+
+.box {
+  display: grid;
+  justify-content: space-between;
+  position: relative;
+  margin: 7px;
+  padding: auto;
+  border: 2px solid white;
+  width: 180px;
+  height: 20px;
+  border-radius: 15px;
+  opacity: 0.5;
+  background-color: #ee9ca7;
+  box-shadow: 5px 3px 5px #ed7d71 inset;
+}
+
+.small-box {
+  justify-content: space-between;
+  position: relative;
+  margin: 7px;
+  padding: auto;
+  border: 2px solid white;
+  width: 100px;
+  height: 15px;
+  border-radius: 15px;
+  opacity: 0.5;
+  background-color: #ee9ca7;
+  box-shadow: 10px 10px 5px #ed7d71 inset;
+}
+
+/* /.hidden {
+  opacity: 0;
+
+  transform: translateY(-100%);
+  transition: all 5s;
+} */
+
+
+
+ /* .show {
+ opacity: 1; 
+  
+  transform: translate(0);
+} 
+
+@media (perfers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+  
+}
+
+.container:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.container:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.container:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+ */
