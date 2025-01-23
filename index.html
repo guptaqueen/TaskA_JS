@@ -1,15 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Task A</title>
   </head>
   <body>
     <div id="fullpage">
-      <section class="hidden" id="backBtn">
+      <section class="hidden-1">
         <div class="container">
           <div class="big-box"></div>
           <div class="circle_one">
@@ -61,7 +64,31 @@
         </div>
       </section>
     </div>
-   
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      //       var waypoint = new Waypoint({
+      //   element: document.getElementById('px-offset-waypoint'),
+      //   handler: function(direction) {
+      //     notify('I am 20px from the top of the window')
+      //   },
+      //   offset: 20
+      // })
+
+      $(document).ready(function(){
+        $('.hidden-1').waypoint(function(direction){
+          $('.hidden-1').addClass('animated zoomIn')
+        }, {
+            offset:'50%'
+          }
+        )
+      });
+    </script>
   </body>
 </html>
-

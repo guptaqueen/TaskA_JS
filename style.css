@@ -10,7 +10,7 @@ body {
 }
  html {
   scroll-snap-type: y mandatory;
-  scroll-padding-top: 30px;
+  scroll-padding-top: 100px;
   overflow-y: scroll;
 }
 section {
@@ -33,7 +33,7 @@ section {
   background: linear-gradient(to right, #c0392b, #8e44ad);
   opacity: 0.5;
   position: relative;
-  transition: left 0.3s ease;
+  transition: left 1s ease;
 }
 
 .big-box {
@@ -96,3 +96,9 @@ section {
   box-shadow: 10px 10px 5px #ed7d71 inset;
 }
  
+.hidden-1{
+  opacity: 0;
+}
+.hidden-1{
+  opacity: 1;
+}
